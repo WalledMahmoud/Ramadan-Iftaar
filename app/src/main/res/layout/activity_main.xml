@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ramdan"
+    tools:context="com.example.walledmahmoud.androidapp.MainActivity">
+
+    <EditText
+        android:id="@+id/CityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="96dp"
+        android:drawableBottom="@color/colorPrimary"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="إنت منين ؟"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textColorLink="#3b5998"
+        android:textStyle="normal|bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SunsetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="serif-monospace"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CityText"
+        android:layout_marginStart="148dp" />
+
+    <Button
+        android:id="@+id/buSunset"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_food"
+        android:fontFamily="serif-monospace"
+        android:onClick="GetSunset"
+        android:text="إعرف ميعاد الفطار"
+        android:textColor="#fff"
+        android:textColorLink="#3b5998"
+        android:textSize="14pt"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SunsetTime" />
+
+</android.support.constraint.ConstraintLayout>

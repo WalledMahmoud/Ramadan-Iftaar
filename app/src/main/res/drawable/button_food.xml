@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Button Styles -->
+    <item>
+        <shape>
+
+            <corners android:radius="12dp"/>
+            <padding android:bottom="20px"
+                     android:left="20px"
+                     android:right="20px"
+                     android:top="20px"/>
+
+
+            <solid android:color="#333"/>
+            <stroke android:color="#FF4081"
+                    android:width="2dp"/>
+
+        </shape>
+    </item>
+
+
+</selector>
